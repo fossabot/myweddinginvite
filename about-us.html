@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Krithika and Dinesh invite you</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ <script type="text/javascript" src="js/noty/jquery.noty.js"></script>
+ <script type="text/javascript" src="js/noty/themes/default.js"></script>
+ <script src="js/noty/layouts/bottom.js"></script>
+ <script src="js/noty/layouts/bottomCenter.js"></script>
+ <script src="js/noty/layouts/bottomLeft.js"></script>
+ <script src="js/noty/layouts/bottomRight.js"></script>
+ <script src="js/noty/layouts/center.js"></script>
+ <script src="js/noty/layouts/centerLeft.js"></script>
+ <script src="js/noty/layouts/centerRight.js"></script>
+ <script src="js/noty/layouts/inline.js"></script>
+ <script src="js/noty/layouts/top.js"></script>
+ <script src="js/noty/layouts/topCenter.js"></script>
+ <script src="js/noty/layouts/topLeft.js"></script>
+ <script src="js/noty/layouts/topRight.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<script>
+	$(document).ready(function(){$('p.caption').html("Krithika and Dinesh are getting hitched");
+	var count=20;});
+</script>
+ <script src="animation.js"></script>
+<link rel="stylesheet" href="main.css">
+<script>
+$(document).ready(function()
+{
+var invCount=-1;
+var clickCount=0
+$('#slideshow').click(function() {
+	//$('#invitation-holder #slide'+invCount++).fadeIn('slow');
+if (clickCount==0){
+	slideSwitch();
+clickCount++;
+}
+	//alert('#invitation-holder #slide'+invCount++);
+});
+});
+</script>
+
+<script type="text/javascript">
+
+function slideSwitch() {
+    var $active = $('#slideshow DIV.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
+
+    // use this to pull the divs in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow DIV:first');
+
+    // uncomment below to pull the divs randomly
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+$('#hidethis').html("Thanks a lot for your wishes & blessings, Also we expect your presence on our wedding day. We hope you would make it...");
+}
+
+
+
+</script>
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:338px;
+width:600px;
+}
+
+#slideshow DIV {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    height: 338px;
+   /* background-color: #FFF;*/
+width:600px
+}
+
+#slideshow DIV.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow DIV.last-active {
+    z-index:9;
+}
+
+#slideshow DIV IMG {
+    /*height: 350px;*/
+width:600px;
+    display: block;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+</style>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=339906156080416";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="container">
+	<div id="main-navig">
+		<ul class="gbtc">
+			<li class="gbt"><a href="#">+You</a></li>
+			<li class="gbt"><a href="#">Search</a></li>
+			<li class="gbt"><a href="#">Images</a></li>
+			<li class="gbt"><a href="#">Maps</a></li>
+			<li class="gbt"><a href="#">Play</a></li>
+			<li class="gbt"><a href="#">YouTube</a></li>
+			<li class="gbt"><a href="#">News</a></li>
+			<li class="gbt"><a href="#">Mail</a></li>
+			<li class="gbt"><a href="#">Documents</a></li>
+			<li class="gbt"><a href="#">Calendar</a></li>
+			<li class="gbt"><a href="#">More</a></li>
+		</ul>
+	</div>
+	<div class="body">
+	<div class="search-bar" >
+		<div class="google-logo"><a href="index.php"><img src="images/google-logo-new-small.gif" border="0"></a></div>
+		<div class="google-search-form">
+<div style="border:1px solid #C0C0C0;width:540px;height:28px;margin:0 auto;background:#FFF;float:left"><p class="caption"></p><p class="cursor">|</p></div>
+<div class="search-bar-button"><img src="images/search-btn.gif" id="google-search-btn"></div>
+		</div>
+	</div>
+	<div class="search-result-status">
+			<ul class="menu">
+					<li ><a href="result.html">Web</a></li>
+					<li><a href="photos.html">Images</a></li>
+					<li><a href="maps.html">Maps</a></li>
+					<li><a href="wishes.html">Post your wishes</a></li>
+					<li class="active"><a href="about-us.html">About Us</a></li>
+					<li><a href="videos.html" >Videos</a></li>
+					<li><a href="#" class="much-more">Much More</a></li>
+				</ul>
+                <div class="search-preferences"><table cellpadding="0" align="right"><tr><td><img src="images/safe-search-btn.gif"></td><td>&nbsp;</td><td><img src="images/search-settings.gif"></td></tr></table></div>
+	</div>
+
+	<div class="search-result-status-2">
+			<div class="search-result-status-stats" >Page 1 of about 32,500,000 results (0.33 seconds)</div>
+	</div>
+	<div class="search-result-container" style="min-height:850px;background:none">
+
+			<div class="search-result-left">
+				&nbsp;
+
+			</div>
+
+			<div class="search-result-right">
+
+ <script type="text/javascript" src="jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css" media="screen" />
+				<script type="text/javascript">
+    $(function() {
+        $('.gallery a').lightBox();
+    });
+    </script>
+				<div class="result-set" style="clear:both">
+					<span class="desc"><span style="font-size:25pt;font-family: 'Montez', cursive;">Bolt from the blue!!!.... Cupid shot an arrow</span><br><br>
+ <i id="hidethis"><span style="font-size:12pt;">That's exactly how this happened, and we are finally getting hitched. PHEWW...it was a long wait though!</span></i></span><br><br>
+				</div>
+
+				<div class="result-set" style="clear:both">
+				<img src="images/about-us-page-dinesh.png">
+				<img src="images/about-us-page-krithika.png" style="margin-left:-30px">
+				<!--span class="desc"><img src="images/tin.gif" alt="Dinesh" align="left" hspace="10"/>
+					<span class="desc"><a href="http://www.facebook.com/jeevandongre" target="_blank"><span style="font-size:26pt;color:blue;font-family: 'Kaushan Script', cursive;">Jeevan ....jeen </span></a><br><br>
+					<i>"Strawberry flavoured anything, Vijay, Whiskey, I phone, Sweet tooth, X- Box, Endless Movies, Cricket, Dexter, Friends and Food...", that's Dinesh for you in a sentence!
+Soft spoken and polite, gentle and kind is what "people say"... but to me it's like saying the world was to end on 21/12/12...A big myth, as big as him!!!
+</i></span><br><br><br>
+ A successful marriage requires falling in love many times, always with the same person. And, I am happy that the person is Pallavi.</span--><br><br>
+				</div>
+				<br><br>
+				<!--div class="result-set" style="clear:both">
+				<span class="desc"><img src="images/kri.gif" alt="Krithika" align="left" hspace="10"/>
+					<span class="desc"><strong><a href="http://www.facebook.com/krithika.shamsunder" target="_blank"><span style="font-size:26pt;color:orange;font-family: 'Kaushan Script', cursive;">Krithika...Kri</span></a></strong><br><br>
+					<i>"Bacon on anything, Vijay, Chocolates, Liffeee, Baking, Coffee, Singing, Friends, Shopping and more shopping...", that's Krithika for you in a sentence!
+Konjam Anger, Konjam Pamper! Konjam Shouting Konjam Caring! Konjam Naughty Konjam Beauty! She is a bundle of all these together!!!
+</i></span><br><br>
+ I believe everything happens for a reason, and I am glad that Dinesh is going to be a reason as we begin to write a new chapter together!</span><br><br>
+				</div-->
+<span class="desc"><strong><span style="font-size:20pt;font-family: 'Handlee', cursive;">Come along as we embark to create this vivid page in our lives!</span></strong><br><br>
+			</div>
+<div class="search-result-ad-container">
+
+<div class="result-set">
+					<a href="#">Best Compliments from :</a><br>
+					<span class="link">www.krithikandinesh.in/dinesh-friends</span><br>
+
+			</div>
+<div class="result-set">
+					<a href="#">Best Compliments from :</a><br>
+					<span class="link">www.krithikandinesh.in/kri-friends</span><br>
+		</div>
+</div>
+
+</div>
+
+	</div>
+
+		<div style="display: block;" id="footer1" class="ctr-p">
+		<a href="javascript:;" class="disclaimer">Disclaimer</a><a href="javascript:;" class="other-footer-links">Business Solutions</a><a href="javascript:;" class="other-footer-links">Privacy &amp; Terms</a>
+
+	</div>
+	</div>
+</div>
+</body>
+
+</html>
